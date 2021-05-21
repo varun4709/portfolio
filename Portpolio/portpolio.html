@@ -1,0 +1,263 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+ 
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<style>
+  
+</style>
+
+</head>
+<body>
+
+
+    <section class="container"  >   
+    <div class="logo">
+        <div class="port"  >  
+       <h2>Port<span class="po">folio</span></h2> 
+    </div>
+    
+        <div class="nav">
+            <ul class="nav-line">   
+         <li>    <a href="#home1" onclick="finish()" >Home</a> </li>  
+        <li>    <a href="#about"    >About </a>  </li>  
+          <li>  <a href="#services">Services</a>  </li> 
+
+     <li>  <a href="#skill" class="sk" >Skill</a>  </li> 
+
+          <li>  <a href="#contact"  class="cn" >Contact</a>  </li> 
+        </ul>
+        </div>
+        <div class="hamburger">
+          <div class="linex"  ></div>
+          <div class="linex"  ></div>
+          <div class="linex" ></div>
+              </div>
+    </div>
+
+    
+     <script  >
+  const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav");
+const links = document.querySelectorAll('.nav li');
+const line = document.querySelectorAll(".nav a")
+
+  // const lt = document.querySelector(".finish");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("open");
+
+  links.forEach(links => {
+    links.classList.toggle("fade");
+
+  });
+});
+
+line.addEventListener("click", () => {
+  navLinks.classList.toggle("close");
+
+});
+
+line.addEventListener("click", () => {
+  $(".nav").css("pointer-events" , "none"); 
+
+});
+</script>
+
+<script> 
+
+  
+  
+$(document).ready(function(){
+    $(window).scroll(function(){
+        var scroll = $(window).scrollTop();
+        if (scroll > 20) {
+          
+          $(".logo").css("background" , "#dc143c");
+          $(".po").css("color" , "#fff");
+        }
+  
+        else{
+         
+            $(".logo").css("background" , "transparent");  
+            $(".po").css("color" , "#dc143c");	
+        }
+    })
+  })
+</script>
+
+<!------home page-->
+<div class="home" id="home1" >
+    <div class="head" >
+<h2> Hello, my name is </h2>
+<h1>  Varun  Maletha</h1>
+<h3   > And I'm a<span > web developer  </span></h3><br> 
+<button class="hire"> Hire me</button>
+    </div>
+    <div class="img">
+
+    </div>
+</div>
+</section>
+<!----------------------About me-------------------------------->
+<header  class="ab"  id="about" >
+    <h1>About me </h1>
+    <br>
+    <p>-----Who I am ------</p>
+    <div class="about"   >
+        <div class="me">
+
+        </div>
+        <div class="detail">
+<h3> I'm Varun maletha And I'm a Web developer </h1> <br>
+    <li>  I'm a  web developer, i have  knowledge about development of World <br> Wide Web applications 
+         using a client–server model. </li> 
+        <li>  I use  HTML, CSS and JavaScript for frontEnd end In backed i use PHP ,Mysql. </li> 
+         <li> I had done  3 month internship in Tech Access. </li> 
+       <li>  A web content management system is often used to develop and maintain web applications. </li>
+       <br> <br>
+       <a href="varun maletha(1813051047) PPT.pptx">Download CV</a>
+    </div>
+    </div>
+</header>
+
+
+<!---Services-->
+
+<section class="service"  id="services" >
+   <div class="box">
+    <h1>Services </h1>
+    <br>
+    <p>-----What I provide ------</p>
+   
+   </div>
+   <div class="box-2">
+       <div class="box-left">
+        <a class="fa fa-code" id="icon"  ></a>
+        <h1>Web Developer</h1>
+<p> I Know HTML, CSS, JavaScript, PHP, <br>and other relevant web design coding languages.<br>
+i can Create and test applications for websites.<br>
+Collaborate.
+</p>
+       </div>
+
+       <div class="box-right">
+        <a class="fa fa-line-chart"></a>
+        <h1>Advertising</h1>
+        <p>   Social Media Advertising, <br>
+            Content Marketing, <br>
+            Email Marketing, Mobile Advertising.</p>
+        
+       </div>
+   </div>
+  
+
+    
+</section>
+<!-------------------------------------------Skill--------------------------------->
+<section class="skill"  id="skill" >
+<div class="name">
+    <h1>My Skill </h1>
+    <br>
+    <p>-----What I know ------</p>
+   
+ 
+</div>
+<div class="experience">
+    <div class="know">
+ <h2> My skills & experience</h2>
+ <br>
+     <li>  i have 3 month training experience from &nbsp; &nbsp; &nbsp; Tech access  </li> 
+     <li> in this training i made two project  <br>
+      &nbsp; &nbsp; &nbsp;  i. Food odering website  <br>
+       &nbsp; &nbsp; &nbsp;  ii.demo music player <br>
+       &nbsp; &nbsp; &nbsp;  I made Both the project indivisual.</li> 
+     <li> I'm also diploma holder in computer science. </li>  <br>
+     <button>Read more</button>
+    </div>
+    <div class="know-1">
+<label> Html  <span class="space" > 80%</span></label> <br>
+  <hr class="line" > </label> <br> 
+  <label> Css  <span class="space-1" > 70%</span></label> <br>
+  <hr class="line-1" > </label> <br> 
+  <label> Javascript <span class="space-2" > 60%</span></label> <br>
+  <hr class="line-2" > </label> <br> 
+  <label> Bootstrap  <span class="space-3" > 70%</span></label> <br>
+  <hr class="line-3" > </label> <br> 
+  <label> PHP  <span class="space-4" > 65%</span></label> <br>
+  <hr class="line-4" > </label> <br> 
+  <label> Mysql  <span class="space-5" > 60%</span></label> <br>
+  <hr class="line-5" > </label> <br> 
+    </div>
+</div>
+</section>
+
+<!--------------------------CONtact----------------->
+<section class="contact"  id="contact">
+    <div class="name">
+        <h1>Contact me </h1>
+        <br>
+        <p>-----Get in Touch------</p>
+       
+     <div class="contain">
+         <div class="row">
+
+       <h2> Get in touch</h2> <br>
+        
+        <i class="fa fa-user"></i> <h2   >  name</h2>
+         <label>Varun maletha </label> <br> <br>
+          <i class="fa fa-address-card"> </i> <h2  >  Address</h2> 
+          <label>Burari , new delhi</label> <br> <br>
+         <i class="fa fa-phone"  ></i>
+          <h2> contact no.</h2>
+          <label>7428725807</label> <br> <br>
+          <i class="fa fa-envelope" ></i>
+          <h2>Email</h2> 
+         <label>@malethavarun@gmail.com</label> <br>
+
+         </div>
+         <div class="row-2">
+             <h2> message me</h2> <br>
+        <input type="text" placeholder="Your name" > <input type="email" required class="email" placeholder="Email"> <br> <br>
+        <input type="text" placeholder="subject" class="subj" > <br> <br>
+        <input type="text" placeholder="message" class="message" col="2"   > <br> <br>
+        <button onclick="myfunction()"  >Send message </button>
+         </div>
+        
+     </div>
+    </div>
+    <div class="font" >
+      <a href="#home1"  class="fa fa-arrow-circle-up"  >   </a>
+    </div>
+</section>
+<script>
+  function myfunction(){
+    alert('thankyou ');
+  }
+</script>
+
+ <!-- footer Section Starts Here -->
+ <section class="footer">
+  <div class="design">
+      <p> @All rights reserved. Designed By <a href="#">Varun maletha  </a></p>
+  </div>
+</section>
+<!-- footer Section Ends Here -->
+
+
+</body>
+</html>
